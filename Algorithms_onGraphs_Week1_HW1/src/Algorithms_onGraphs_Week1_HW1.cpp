@@ -12,10 +12,10 @@
 using std::vector;
 using std::pair;
 
-int number_of_components(vector<vector<int> > &adj) {
-  int res = 0;
+
+int reach(vector<vector<int> > &adj, int x, int y) {
   //write your code here
-  return res;
+  return 0;
 }
 
 int main() {
@@ -28,5 +28,8 @@ int main() {
     adj[x - 1].push_back(y - 1);
     adj[y - 1].push_back(x - 1);
   }
-  std::cout << number_of_components(adj);
+  int x, y;
+  std::cin >> x >> y;
+  std::cout << reach(adj, x - 1, y - 1);
 }
+
